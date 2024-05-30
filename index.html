@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Hopping</title>
+  <link rel="icon" type="image/png" href="image/coffee-beans.png">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="title">Cafe Hopping Around Los Angeles</div>
+  <div class="love-letter">made by mia, with love.</div>
+
+  <div class="toggles">
+        <div class="toggle">
+            <span class="toggle-label">Drink</span>
+            <label class="switch">
+              <input type="checkbox" class="toggle-drink">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        <div class="toggle">
+          <span class="toggle-label">Milk</span>
+          <label class="switch">
+            <input type="checkbox" class="toggle-milk">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="toggle">
+          <span class="toggle-label">Price</span>
+          <label class="switch">
+            <input type="checkbox" class="toggle-price">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="toggle">
+          <span class="toggle-label">Rating</span>
+          <label class="switch">
+            <input type="checkbox" class="toggle-rating">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="toggle">
+          <span class="toggle-label">Company</span>
+          <label class="switch">
+            <input type="checkbox" class="toggle-company">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="toggle">
+          <span class="toggle-label">Duration</span>
+          <label class="switch">
+            <input type="checkbox" class="toggle-duration">
+            <span class="slider round"></span>
+          </label>
+        </div>
+    </div>
+
+  <div class="legend-button-container">
+    <button class="legend-button">VIEW LEGEND</button>
+  </div>
+
+  <div class="legend-popup">
+    <div class="legend-container">
+      <div class="legend-title">Legend</div>
+      <div class="legend-section">
+        <div class="legend-section-title">Drinks</div>
+        <div class="legend-separator"></div>
+        <div class="legend-items">
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #99D376;"></div>
+            <span>ICED MATCHA</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #34730E;"></div>
+            <span>HOT MATCHA</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #CF905F;"></div>
+            <span>ICED COFFEE</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #92603A;"></div>
+            <span>HOT COFFEE</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #8CCEDD;"></div>
+            <span>OTHER</span>
+          </div>
+        </div>
+      </div>
+      <div class="legend-section">
+        <div class="legend-section-title">Size</div>
+        <div class="legend-separator"></div>
+        <div class="legend-items-row">
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #939393; width: 20px; height: 20px; border-radius: 50%;"></div>
+            <span>12 OZ</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #939393; width: 26px; height: 26px; border-radius: 50%;"></div>
+            <span>16 OZ</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #939393; width: 32px; height: 32px; border-radius: 50%;"></div>
+            <span>20 OZ</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon" style="background-color: #939393; width: 38px; height: 38px; border-radius: 50%;"></div>
+            <span>24 OZ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="p5/p5.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
+    
